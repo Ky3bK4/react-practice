@@ -25,7 +25,6 @@ const PostList = (props) => {
                 remove={props.remove}
               />
             </CSSTransition>
-
           )
         }
       </TransitionGroup>

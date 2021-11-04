@@ -1,0 +1,24 @@
+.lds {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}
+.lds:after {
+  content: " ";
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: #eacc5e transparent #eacc5e transparent;
+  animation: lds 1.2s linear infinite;
+}
+@keyframes lds {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

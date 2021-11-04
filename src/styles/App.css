@@ -7,11 +7,29 @@
 #root {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
   width: 800px;
 }
+
+.navbar {
+  background: #cc9933;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+  padding: 0 15px;
+}
+
+.navbarLinks {
+  margin-left: auto;
+}
+
+
 
 .post {
   display: flex;
@@ -58,4 +76,25 @@
   transition: opacity 300ms, transform 300ms;
 }
 
+.paginationWrapper {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
 
+.paginationItem {
+  margin-right: 10px;
+  border: 1px solid #cc9933;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.paginationItem:hover,
+.paginationItem.current{
+  background: #cc9933;
+  color: #fff;
+}
+
+.post__btns {
+  display: flex;
+}
